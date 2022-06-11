@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(../../../pictures/sign-up.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 45rem;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: #1ba6b0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: larger;
+  }
+  
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  .ul {
+    margin-top: 4.5rem;
+    margin-left: 2rem;
+  }
+  
+  .space_navitems {
+    padding-left: 3rem;
+  }
+  
+  .home_nav {
+    padding-top: 0.2rem;
+    height: 2rem;
+    width: 5.5rem;
+    border-radius: 1rem;
+    background-color: #1ba6b0;
+  }
+  
+  .house {
+    float: left;
+    padding-left: 0.2rem;
+  }
+  
+  .box1{
+    //   border: 2px solid red;
+  }
+
+  .box2{
+    // border: 2px solid green;
+    margin-top: 2rem;
+    
+  }
+
+  .social-icons {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #f0f0f0;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 50%;
+    border: 0.5px solid #e4e3e3;
+    justify-content: center;
+    text-align: center;
+    transition: .2s;
+}
+
+.social-icons:hover{
+    border: 1.5px solid #0da1ac ;
+
+}
+.icons {
+    color: #0da1ac;
+    margin-top: 0.2rem;
+    border-radius: 10%;
+    font-size: 1.5rem;
+    height: 2rem;
+    width: 5rem;
+}

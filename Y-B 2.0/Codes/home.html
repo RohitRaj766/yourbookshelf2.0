@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!--Google Icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/290cce2f00.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Own Css-->
+    <link href="./scss/main.css" rel="Stylesheet" />
+
+    <!-- Inline Css -->
+    <style>
+
+      @media screen and (max-width: 1100px) {
+        .container1 {
+          display: inline-block;
+          cursor: pointer;
+          margin-top: 2.5rem;
+          margin-left: 1rem;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+          width: 25px;
+          height: 4px;
+          background-color: #1ba6b0;
+          margin: 6px 0;
+          transition: 0.4s;
+        }
+
+        .change .bar1 {
+          -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar2 {
+          opacity: 0;
+        }
+
+        .change .bar3 {
+          -webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+        .navbar1 {
+          display: none;
+        }
+      }
+
+      .menuu {
+        display: none;
+      }
+
+      @media screen and (min-width: 1100px) {
+        #menu ul {
+          display: none;
+          
+        }
+     
+      }
+
+    .ham_menu{
+      padding-left:.2rem;
+    }
+    
+    @media screen and (max-width:1035px) 
+    {
+      .lines{
+      font-size: .7rem;
+           }
+
+    .login{
+      margin-top: 1rem;
+      border: 2.2px solid #8d14f7;
+      border-radius: 1rem;
+      width: 3.5rem;
+      height: 1.5rem;
+      color: #8d14f7;
+      font-size: .6rem;
+      font-weight: 400;
+      font-family: 'Times New Roman', Times, serif;
+  
+  }
+  
+  .signup{
+      margin-left: 1rem;
+      margin-top: 1rem;
+      border: 2.2px solid #0DA1AC;
+      border-radius: 1rem;
+      width: 4rem;
+      height: 1.5rem;
+      color: #0DA1AC;
+      font-size:.6rem;
+      font-weight: 400;
+      font-family: 'Times New Roman', Times, serif;
+  
+  }
+
+  .social-icons{
+   
+    background-color: #ffffff;
+    border-color: #ffffff;
+   
+    
+}
+.icons{
+    color:#0DA1AC;
+
+    border-radius: 10%;
+    font-size: 2rem;
+    height: 1.5rem;
+    width: 3rem;
+}
+
+.box{
+  margin-left: 5rem;
+  margin-top: 5rem;
+  width: 30%;
+  height: fit-content;
+  
+}
+.ham_menu{
+  font-size: small;
+}
+.heading{
+ 
+  font-size: 1.3rem;
+}
+}
+
+
+  @media screen and (max-width:700px) {
+    .lines{
+      font-size: .5rem;
+    }
+  
+  }
+
+
+    </style>
+
+    <title>Your BookShelf</title>
+  </head>
+  <body>
+
+  <!-- Mobile Navigation -->
+ 
+  <nav class="navbar  navbar-expand-lg bg-light" style="box-shadow: -1px 1px 6px 3px rgba(26,158,158,0.75);
+  -webkit-box-shadow: -1px 1px 6px 3px rgba(26,158,158,0.75);
+  -moz-box-shadow: -1px 1px 6px 3px rgba(26,158,158,0.75);">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand " href="#">YB</a> -->
+      <div class="container2 "  onclick="cross2(this)">
+        <div class="bar11"></div>
+        <div class="bar22"></div>
+        <div class="bar33"></div>
+  
+        <div class="menuu" id="menu2">
+          <ul class="mob_ul text-center" style=" display:block; list-style: none; ">
+            <li class="ham_menu_mob"><a href="button.html" ><span class="material-symbols-rounded mx-2 nav_icons">
+              home
+              </span> Home</a></li>
+            <li class="ham_menu_mob"><a href="#"><span class="material-symbols-rounded mx-2 nav_icons">
+              article
+              </span> About</a></li>
+            <li class="ham_menu_mob"><a href="#"><span class="material-symbols-rounded mx-2 nav_icons">
+              gavel
+              </span> Terms</a></li>
+            <li class="ham_menu_mob"><a href="#"><span class="material-symbols-rounded mx-2 nav_icons">
+              note
+              </span> Disclaimer</a></li>
+            <li class="ham_menu_mob"><a href="#"><span class="material-symbols-rounded mx-2 nav_icons">
+              contact_page
+              </span> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container text-center box2">
+    <h2 class="heading1" style="margin-top: 3rem; color:#8d14f7; font-weight:bolder; font-family:'Times New Roman', Times, serif; " >Your BookShelf</h2>
+    <h6 class="lines1" style="margin-top: 1rem; color:#8e8991; font-weight:lighter; font-family:'Times New Roman', Times, serif; font-size:.7rem" >
+      If you love to read E-books then this is the<br />
+      correct place for you, Go ahead and nurture yourself.
+      <br />Happy Reading Everyone.
+    </h6>
+
+    <div class="container img_home text-center" style="margin-top:1.9rem;">
+      <img src="../pictures/home.jpg" alt="pic" width="250" height="250" style="box-shadow: 2px 2px 3px 3px rgba(221,221,221,0.75);
+      -webkit-box-shadow: 2px 2px 3px 3px rgba(221,221,221,0.75);
+      -moz-box-shadow: 2px 2px 3px 3px rgba(221,221,221,0.75); border-bottom-left-radius:40%;  border-top-left-radius:40%; border-top-right-radius:40%; ">
+      </div>
+    <div class="container" style="margin-top: 1rem; ">
+      <button class="login" style="width: 4.5rem; font-size:.7rem;"><a href="button.html" style="text-decoration: none; color:#8d14f7; ">Login</a></button>
+
+      <button class="signup" style="width: 5rem; font-size:.8rem ; border: 2px solid rgb(27, 166, 176); color:rgb(27, 166, 176);">Sign-Up</button>
+    </div>
+   <div class="container" style="display: flex;"> <hr style="color: rgb(27, 166, 176); width:50%; float:left; height:2px; "> <hr style="color:#8d14f7; width:50%; float:right; height:2px"></div>
+    <div class="container icons_box " style="display:flex; width:100%; justify-content:center; margin-left:.2rem; " >
+      <div class="social-icons2  text-center">
+        <a href="#"><i class="fab fa-instagram icons2"></i></a>
+      </div>
+      <div class="social-icons22">
+        <a href="#"><i class="fab fa-facebook icons2"></i></a>
+      </div>
+      <div class="social-icons22">
+        <a href="#"><i class="fab fa-linkedin-in icons2"></i></a>
+      </div>
+    </div></div>
+  </div>
+  </div>
+  
+    <!-- for solving height issue -->
+    <div class="container-fluid main_Vh">
+      <!-- hamburger -->
+    <div class="container1"  onclick="cross(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+
+      <div class="menuu" id="menu">
+        <ul style="list-style: none;">
+          <li class="ham_menu"><a href="button.html">Home</a></li>
+          <li class="ham_menu"><a href="#">About</a></li>
+          <li class="ham_menu"><a href="#">Terms</a></li>
+          <li class="ham_menu"><a href="#">Disclaimer</a></li>
+          <li class="ham_menu"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+<!-- navbar -->
+    <div class="navbar1">
+      <ul class="ul">
+        <li class="home_nav text-center">
+          <a href="#" class="text-white"
+            ><span class="material-symbols-rounded text-white house">
+              house </span
+            >Home</a
+          >
+        </li>
+        <li class="space_navitems"><a href="#">About</a></li>
+        <li class="space_navitems"><a href="#">Disclaimer</a></li>
+        <li class="space_navitems"><a href="#">Terms</a></li>
+        <li class="space_navitems"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="container text-center box">
+      <h1 class="heading">Your-Bookshelf</h1>
+      <h6 class="lines">
+        If you love to read E-books then this is the<br />
+        correct place for you, Go ahead and nurture yourself.
+        <br />Happy Reading Everyone.
+      </h6>
+      <div class="container">
+        <button class="login"><a href="button.html" style="text-decoration: none; color:#8d14f7;">Login</a></button>
+
+        <button class="signup"><a href="button.html" style="text-decoration: none; color:#1ba6b0;">Sign-up</a></button>
+      </div>
+    </div>
+<!-- social media icons -->
+    <div class="container" style="position: absolute;">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram icons"></i></a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook icons"></i></a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin-in icons"></i></a>
+      </div>
+    </div>
+  </div>
+  </div>
+    <script>
+      function cross(x) {
+
+        x.classList.toggle("change");
+
+        var y = document.getElementById("menu");
+        if (y.style.display === "block") {
+          y.style.display = "none";
+        } else {
+          y.style.display = "block";
+        }
+
+       
+        
+      }
+      function cross2(x) {
+
+        x.classList.toggle("change");
+
+        var y = document.getElementById("menu2");
+        if (y.style.display === "block") {
+          y.style.display = "none";
+        } else {
+          y.style.display = "block";
+        }
+
+       
+        
+      }
+      
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
